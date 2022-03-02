@@ -1,0 +1,10 @@
+# Composer
+vendor
+
+# PHPunit
+.phpunit.result.cache
+tests/configs/*
+
+# IDE files
+.idea
+.vs

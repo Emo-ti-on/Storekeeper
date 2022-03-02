@@ -1,0 +1,24 @@
+{
+    "name": "emo-ti-on/storekeeper",
+    "description": "PHP config creator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sander",
+            "email": "shvedov-2005@list.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Storekeeper\\": "src/"
+        }
+    }
+}
