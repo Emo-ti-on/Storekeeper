@@ -49,7 +49,7 @@ class Config
 
     /**
      * Turns the parts of string separated by $separator into array
-     * @param string $map
+     * @param mixed $map
      */
     protected function parseMap(&$map, &$finalIndex)
     {
@@ -87,6 +87,7 @@ class Config
         $this->parseMap($map, $finalIndex);
 
         $point = &$this->current;
+        /** @var array $map $point */
         foreach ($map as $index) {
             if (!isset($point[$index])) $point[$index] = [];
             $point = &$point[$index];
@@ -110,6 +111,7 @@ class Config
         $this->parseMap($map, $finalIndex);
 
         $point = &$this->current;
+        /** @var array $map $point */
         foreach ($map as $index) {
             $point = &$point[$index];
         }
@@ -132,6 +134,7 @@ class Config
         $this->parseMap($map, $finalIndex);
 
         $point = &$this->current;
+        /** @var array $map $point */
         foreach ($map as $index) {
             $point = &$point[$index];
         }
@@ -205,6 +208,7 @@ class Config
         $this->parseMap($map, $finalIndex);
 
         $point = &$this->current;
+        /** @var array $map $point */
         foreach ($map as $index) {
             if (!isset($point[$index])) return false;
             $point = &$point[$index];
