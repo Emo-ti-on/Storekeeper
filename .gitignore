@@ -4,6 +4,7 @@ vendor
 # PHPunit
 .phpunit.result.cache
 tests/configs/*
+!tests/configs/.gitkeep
 
 # IDE files
 .idea
